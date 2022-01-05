@@ -1,6 +1,8 @@
-public struct ExecLibrary {
-    public private(set) var text = "Hello, World!"
-
+public class ExecLibrary {
     public init() {
+    }
+    
+    public func foo() {
+        print("@@ FOO!!")
     }
 }

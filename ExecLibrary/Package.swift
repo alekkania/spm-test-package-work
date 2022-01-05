@@ -9,7 +9,14 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "ExecLibrary",
-            targets: ["ExecLibrary"]),
+            targets: ["ExecLibrary"],
+            
+            dependencies: [
+                .package(name: "Firebase",
+                         url: "https://github.com/firebase/firebase-ios-sdk.git",
+                         .exact("8.0.0"))
+            ]),
+        
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
