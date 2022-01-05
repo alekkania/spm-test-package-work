@@ -3,6 +3,6 @@ public class ExecLibrary {
     }
     
     public func foo() {
-        print("@@ FOO!!")
+        print("@@ FOO!! 123")
     }
 }
