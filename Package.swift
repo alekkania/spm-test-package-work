@@ -22,7 +22,10 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "ExecLibrary",
-            dependencies: []),
+            dependencies: [.product(name: "FirebaseFirestore",
+                                    package: "Firebase"),
+                           .product(name: "FirebaseAuth",
+                                    package: "Firebase")]),
         .testTarget(
             name: "ExecLibraryTests",
             dependencies: ["ExecLibrary"]),
